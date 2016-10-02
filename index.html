@@ -8,73 +8,80 @@
 <body>
    <div class="bl-background">
     <div class="bl-left-column"> 
-           <div class="head-form">
-           <div class="search-block">
-              <input type="text" id="search-feild" placeholder="Назва товару"> 
-              <button class="add-button">Додати</button>   
-            </div>       
-       </div> 
-         <div class="bl-list">
+           <div class="head-form white-bg">
+               <div class="search-block">
+                  <input type="text" id="search-field" placeholder="Назва товару"> 
+                  <button class="add-button bold" data-tooltip="Додати товар">Додати</button>   
+               </div>       
+          </div> 
+           <div class="bl-list">
               <div class="bl-product">
                   <span class="bl-product-name">Помідори</span>
               </div>
               <div class="bl-count">
-                  <button class="bl-minus circle">-</button>
-                  <span class="bl-label round">1</span>
-                  <button class="bl-plus circle">+</button>
+                  <button class="bl-minus circle" data-tooltip="Зменшити кількість">-</button>
+                  <div class="bl-label radius">1</div>
+                  <button class="bl-plus circle" data-tooltip="Збільшити кількість">+</button>
               </div>    
               <div class="bl-buttons">
-                  <button class="button-buy round" >Куплено</button>
-                  <button class="button-buy-number round">х</button>
+                  <button class="button-buy radius" data-tooltip="Купити" >Куплено</button>
+                  <button class="button-buy-number radius" data-tooltip="Видалити">х</button>
               </div>
-        </div>  
-         <div class="bl-list">
+           </div>  
+           <div class="bl-list">
               <div class="bl-product">
-                  <span class="bl-product-name">Печиво</span>
+                  <span class="bl-product-name">Помідори</span>
               </div>
               <div class="bl-count">
-                  <button class="bl-minus circle">-</button>
-                  <span class="bl-label round">1</span>
-                  <button class="bl-plus circle">+</button>
+                  <button class="bl-minus circle" data-tooltip="Зменшити кількість">-</button>
+                  <div class="bl-label radius">1</div>
+                  <button class="bl-plus circle" data-tooltip="Збільшити кількість">+</button>
               </div>    
               <div class="bl-buttons">
-                  <button class="button-buy round" >Куплено</button>
-                  <button class="button-buy-number round">х</button>
+                  <button class="button-buy radius" data-tooltip="Купити" >Куплено</button>
+                  <button class="button-buy-number radius" data-tooltip="Видалити">х</button>
               </div>
-        </div>  
-         <div class="bl-list">
+           </div>  
+          <div class="bl-list">
               <div class="bl-product">
-                  <span class="bl-product-name">Сир</span>
+                  <span class="bl-product-name">Помідори</span>
               </div>
               <div class="bl-count">
-                  <button class="bl-minus circle">-</button>
-                  <span class="bl-label round">1</span>
-                  <button class="bl-plus circle">+</button>
+                  <button class="bl-minus circle" data-tooltip="Зменшити кількість">-</button>
+                  <div class="bl-label radius">1</div>
+                  <button class="bl-plus circle" data-tooltip="Збільшити кількість">+</button>
               </div>    
               <div class="bl-buttons">
-                  <button class="button-buy round" >Куплено</button>
-                  <button class="button-buy-number round">х</button>
+                  <button class="button-buy radius" data-tooltip="Купити" >Куплено</button>
+                  <button class="button-buy-number radius" data-tooltip="Видалити">х</button>
               </div>
-        </div>  
-  </div>
-        <div class="bl-bought">
-            <div class="bl-title-1">Залишилося</div>
-            <div class="not-bought-items">               
-                <span class="not-bought-item round">Помідори</span>
-                <span class="not-bought-item-number circle">1</span>
-                <span class="not-bought-item round">Печиво</span>
-                <span class="not-bought-item-number circle">1</span>
-                <span class="not-bought-item round">Сир</span>
-                <span class="not-bought-item-number circle">1</span>    
-            </div>
-           
-            <div class="bl-title-2">Куплено</div>
-            
-            <div class="bought-items">
-                
-            </div>
+           </div>  
+    </div>
+        <div class="bl-right-column">
+           <div class="bl-title-1 white-bg bold">Залишилося</div> 
+           <div class="not-bought-items white-bg">
+               <div class="item radius">
+                    <span class="not-bought-item">Помідори</span>
+                    <span class="not-bought-item-number circle">1</span>
+               </div>
+               <div class="item radius">
+                    <span class="not-bought-item">Печиво</span>
+                    <span class="not-bought-item-number circle">1</span>
+               </div>
+               <div class="item radius">
+                    <span class="not-bought-item">Сир</span>
+                    <span class="not-bought-item-number circle">1</span>
+               </div>
+           </div>
+           <div class="bl-title-2 white-bg bold">Куплено</div>
+           <div class="bought-items white-bg">            
+           </div>
        </div>
-</div>
-
+  </div>
+    <div class="badge radius">
+            <h1>Buy List</h1>
+            <h2>Created by:</h2>
+            <h3>Gavryshko Yaroslav</h3>
+    </div>                 
 </body>
 </html>
