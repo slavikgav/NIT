@@ -4,14 +4,13 @@
 }
 .bl-background {
     padding-top: 7%;
-    
     width: 1100px;
     margin: auto;
     display: flex;
 }
 
-body { 
-    background-color: #cdcbcb;  
+body {
+    background-color: #cdcbcb;
     height: 100%;
 }
 [class*="button"]{
@@ -28,7 +27,7 @@ body {
     margin-left: 2%;
     width: 30%;
     box-shadow: 0 0 8px grey;
-    margin-bottom: 15%;
+    height: 195px;
 }
 .badge {
     position: fixed;
@@ -38,9 +37,9 @@ body {
     height:125px;
     background-color: #0080ff;
     text-align: center;
-  transition: bottom 0.5s, background-color 0.5s;    
+    transition: bottom 0.5s, background-color 0.5s;
 }
-.badge *{ 
+.badge *{
     color: white;
 }
 .badge h1{
@@ -53,7 +52,7 @@ body {
 .badge h3{
     font-size: 18px;
 }
-    
+
 .badge:hover{
     background-color: #0000ff;
     bottom:-10px;
@@ -61,13 +60,13 @@ body {
 
 @media print{
     .badge {
-    bottom: -80px !important;
-    background-color: white ;
-    border: 3px solid darkmagenta !important;
-    color: #555 !important;
+        bottom: -80px !important;
+        background-color: white ;
+        border: 3px solid darkmagenta !important;
+        color: #555 !important;
     }
     .badge h1{
-    display: none;
+        display: none;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -94,22 +93,20 @@ body {
 }
 @media screen and (max-width: 500px) {
     .bl-background{
-    flex-direction: column;
-    width:430px;
+        flex-direction: column;
+        width:430px;
     }
-    .bl-left-column{ 
+    .bl-left-column{
         width: auto;
     }
-    .bl-right-column{ 
-        width: auto;
-    }
-      .bl-right-column{
+
+    .bl-right-column{
         margin-left: 0;
         margin-top: 5%;
     }
-    
+
 }
-.bl-left-column #search-field { 
+.bl-left-column #search-field {
     border:1px solid #CCC;
     width: 95%;
     border-radius: 3px;
@@ -122,9 +119,9 @@ body {
 }
 
 .bl-left-column .bl-list {
-     margin-top: 1px;
-     background: white;
-     display: flex;
+    margin-top: 1px;
+    background: white;
+    display: flex;
 }
 
 .bl-left-column .bl-list:last-child{
@@ -138,21 +135,21 @@ body {
 }
 
 .bl-left-column .bl-product , .bl-count, .bl-buttons{
-   display: inline-block;
+    display: inline-block;
 }
-.bl-left-column .bl-product { 
+.bl-left-column .bl-product {
     padding-top: 15px;
     height: 32px;
     width: 33%;
     margin-left: 3%;
- }
+}
 
 .bl-left-column .add-button{
     border:none;
     color:white;
     width: 106px;
     margin-right:12px;
-    height: 37px;  
+    height: 37px;
     border-radius: 0px 5px 5px 0px;
     background: #2185D0
 }
@@ -165,13 +162,16 @@ body {
 .bl-right-column .bl-title-1,.bl-title-2,.not-bought-items,.bought-items{
     box-sizing: border-box;
     margin-top: 1px;
-    padding-top: 7px;
+    padding-top: 13px;
     padding-bottom: 7px;
     padding-left: 12px;
-  }
+
+}
 
 .bl-right-column .not-bought-items{
     min-height: 62px;
+    padding-bottom: 15px;
+
 }
 
 .bl-right-column .bl-title-1,.bl-title-2{
@@ -182,8 +182,8 @@ body {
 .bl-right-column .bought-items{
     display: block;
     border-radius:  0px 0px 5px 5px;
-    height: 29px;
-}    
+    min-height: 29px;
+}
 
 .bl-left-column .bl-buttons{
     text-align: right;
@@ -192,18 +192,18 @@ body {
     padding-top: 8px;
 }
 
-.bl-left-column .button-buy{
+.bl-left-column .button-buy, .button-buy-again{
     width: 78px;
     font-size: .71428571rem;
     overflow: visible;
     font-family:  Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
-.bl-left-column .button-buy,.button-buy-number{
+.bl-left-column .button-buy,.button-remove,.button-buy-again{
     height: 31.5px;
 }
-.bl-left-column  .button-buy-number{
-    background: #DB2828; 
+.bl-left-column  .button-remove{
+    background: #DB2828;
     color:white;
     width: 31.5px;
     font-size: .71428571rem;
@@ -229,12 +229,13 @@ body {
     margin-top: 7px;
     display: flex;
     width: 33%;
-    text-align: center;    
+    text-align: center;
 }
 .bl-right-column .item {
     display: inline-block;
-    margin-top: 10px;
     padding: 3px;
+    margin: 1px;
+    margin-top: 3px;
     background: #E8E8E8;
 }
 .bl-right-column .not-bought-item-number{
@@ -252,9 +253,6 @@ button{
     font-size: 9px;
     box-sizing: border-box;
 }
-.item + .item{
-    margin-top: 5px;
-}
 
 [data-tooltip]{
     position: relative;
@@ -266,7 +264,7 @@ button{
     opacity: 0;
     top:0px;
     z-index: 2;
-    background-color: #800040;
+    background-color: darkorchid;
     padding: 7px;
     border-radius: 5px;
     color: white;
@@ -278,7 +276,7 @@ button{
 [data-tooltip]:hover:after{
     opacity: 1;
     display: block;
-    top: -95%;  
+    top: -85%;
 }
 
 .bl-left-column .bl-plus ,.bl-minus,.bl-label{
@@ -299,9 +297,41 @@ button{
 .bl-left-column .bl-minus{
     margin-left: 15%;
     margin-right: 5px;
-    background: #DB2828;   
+    background: #DB2828;
 }
 .bl-left-column .bl-plus {
     margin-left: 5px;
     background: #04a613;
+}
+.strike{
+    text-decoration: line-through;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.hidden {
+    display: none;
+}
+.none{
+    display: none;
+}
+.disabled{
+    opacity:0.4;
+}
+.bought-items{
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+
+.new-name {
+    margin-right: auto;
+    display: none;
+    border-radius: 5px;
+    max-width: 150px;
+
+}
+
+.block{
+    display: inline-block;
 }
